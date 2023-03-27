@@ -39,22 +39,22 @@ repositories {
 extra["springCloudVersion"] = "2022.0.1"
 extra["googleOauthClient"] = "1.34.1"
 extra["kotestVersion"] = "5.5.5"
-extra["resilience4jVersion"] = "2.0.0"
-//extra["wiremockVersion"] = "2.35.0"
+extra["resilience4jVersion"] = "2.0.2"
 extra["springCloudContractWiremockVersion"] = "4.0.1"
 
 dependencies {
-    implementation("org.springframework.boot:spring-boot-starter-actuator")
     implementation("com.fasterxml.jackson.module:jackson-module-kotlin")
     implementation("org.jetbrains.kotlin:kotlin-reflect")
     implementation("org.jetbrains.kotlinx:kotlinx-coroutines-core")
     implementation("org.jetbrains.kotlinx:kotlinx-coroutines-reactor")
+
     implementation("org.springframework.boot:spring-boot-starter-webflux")
+
     implementation("io.github.resilience4j:resilience4j-kotlin:${property("resilience4jVersion")}")
     implementation("io.github.resilience4j:resilience4j-retry:${property("resilience4jVersion")}")
     implementation("io.github.resilience4j:resilience4j-timelimiter:${property("resilience4jVersion")}")
 
-    implementation("com.google.oauth-client:google-oauth-client:${property("googleOauthClient")}")
+    implementation("org.springframework.boot:spring-boot-starter-actuator")
 
     developmentOnly("org.springframework.boot:spring-boot-devtools")
     annotationProcessor("org.springframework.boot:spring-boot-configuration-processor")

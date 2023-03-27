@@ -2,7 +2,7 @@ package com.patrykglow.twitterconnector.adapters.twitter.api
 
 import com.patrykglow.twitterconnector.TweetTestData.createTweet
 import com.patrykglow.twitterconnector.TweetTestData.createTweetResponse
-import com.patrykglow.twitterconnector.adapters.twitter.api.TweetResponseMapper.toTweet
+import com.patrykglow.twitterconnector.adapters.twitter.api.v1.TweetResponseMapper.toTweet
 import com.patrykglow.twitterconnector.domain.Author
 import com.patrykglow.twitterconnector.domain.Tweet
 import io.kotest.matchers.equality.shouldBeEqualToIgnoringFields

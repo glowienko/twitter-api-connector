@@ -1,6 +1,6 @@
-package com.patrykglow.twitterconnector.adapters.twitter.api
+package com.patrykglow.twitterconnector.adapters.twitter.api.v1
 
-import com.patrykglow.twitterconnector.adapters.twitter.api.oauth.TwitterResponseException
+import com.patrykglow.twitterconnector.adapters.twitter.api.v1.oauth.TwitterResponseException
 import io.github.resilience4j.core.IntervalBiFunction
 import io.github.resilience4j.core.functions.Either
 import org.springframework.http.HttpStatus.METHOD_FAILURE

@@ -10,6 +10,8 @@ import com.patrykglow.twitterconnector.IntegrationTestFixture.KEYWORDS
 import com.patrykglow.twitterconnector.IntegrationTestFixture.create2TweetsStreamWithKeepAliveNewLine
 import com.patrykglow.twitterconnector.IntegrationTestFixture.createStreamDisconnectMessage
 import com.patrykglow.twitterconnector.IntegrationTestFixture.createStreamWithOneTweetAndLimitMessage
+import com.patrykglow.twitterconnector.adapters.twitter.api.v1.TWEET_FILTER_STREAM_PATH
+import com.patrykglow.twitterconnector.adapters.twitter.api.v1.TWEET_KEYWORD_QUERY_PARAM
 import com.patrykglow.twitterconnector.domain.BatchOrTimeoutTweetTracker
 import com.patrykglow.twitterconnector.domain.TwitterTrackerSettings
 import com.patrykglow.twitterconnector.infrastructure.Profiles.INTEGRATION_TEST

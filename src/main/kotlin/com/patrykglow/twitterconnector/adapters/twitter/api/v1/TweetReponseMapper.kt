@@ -1,4 +1,4 @@
-package com.patrykglow.twitterconnector.adapters.twitter.api
+package com.patrykglow.twitterconnector.adapters.twitter.api.v1
 
 import com.patrykglow.twitterconnector.domain.Author
 import com.patrykglow.twitterconnector.domain.AuthorId

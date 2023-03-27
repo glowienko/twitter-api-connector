@@ -1,6 +1,6 @@
-package com.patrykglow.twitterconnector.adapters.twitter.api.oauth
+package com.patrykglow.twitterconnector.adapters.twitter.api.v1.oauth
 
-import com.patrykglow.twitterconnector.adapters.twitter.api.oauth.HmacSha1Signature.calculateRFC2104HMAC
+import com.patrykglow.twitterconnector.adapters.twitter.api.v1.oauth.HmacSha1Signature.calculateRFC2104HMAC
 import org.apache.commons.codec.binary.Base64
 import java.io.UnsupportedEncodingException
 import java.net.URLEncoder

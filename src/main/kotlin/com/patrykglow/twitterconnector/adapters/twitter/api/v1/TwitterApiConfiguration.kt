@@ -1,10 +1,10 @@
-package com.patrykglow.twitterconnector.adapters.twitter.api
+package com.patrykglow.twitterconnector.adapters.twitter.api.v1
 
 import com.fasterxml.jackson.databind.DeserializationFeature
 import com.fasterxml.jackson.databind.ObjectMapper
 import com.fasterxml.jackson.databind.PropertyNamingStrategies
 import com.fasterxml.jackson.module.kotlin.jacksonMapperBuilder
-import com.patrykglow.twitterconnector.adapters.twitter.api.oauth.TwitterOauth1Filter.twitterOauth1AuthenticationFilter
+import com.patrykglow.twitterconnector.adapters.twitter.api.v1.oauth.TwitterOauth1Filter.twitterOauth1AuthenticationFilter
 import com.patrykglow.twitterconnector.adapters.twitter.tracker.TwitterTrackerProperties
 import io.github.resilience4j.core.IntervalBiFunction
 import io.github.resilience4j.retry.Retry

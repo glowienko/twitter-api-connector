@@ -1,4 +1,4 @@
-package com.patrykglow.twitterconnector.adapters.twitter.api
+package com.patrykglow.twitterconnector.adapters.twitter.api.v1
 
 import com.fasterxml.jackson.annotation.JsonCreator
 import com.fasterxml.jackson.annotation.JsonValue

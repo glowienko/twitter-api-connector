@@ -1,9 +1,9 @@
-package com.patrykglow.twitterconnector.adapters.twitter.api
+package com.patrykglow.twitterconnector.adapters.twitter.api.v1
 
 import com.fasterxml.jackson.databind.JsonNode
 import com.fasterxml.jackson.databind.ObjectMapper
-import com.patrykglow.twitterconnector.adapters.twitter.api.TweetResponseMapper.toTweet
-import com.patrykglow.twitterconnector.adapters.twitter.api.oauth.TwitterResponseException
+import com.patrykglow.twitterconnector.adapters.twitter.api.v1.TweetResponseMapper.toTweet
+import com.patrykglow.twitterconnector.adapters.twitter.api.v1.oauth.TwitterResponseException
 import com.patrykglow.twitterconnector.domain.Tweet
 import com.patrykglow.twitterconnector.domain.TweetFinder
 import io.github.resilience4j.kotlin.retry.retry

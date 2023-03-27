@@ -1,6 +1,6 @@
 package com.patrykglow.twitterconnector
 
-import com.patrykglow.twitterconnector.adapters.twitter.api.checkIfEligibleForRetry
+import com.patrykglow.twitterconnector.adapters.twitter.api.v1.checkIfEligibleForRetry
 import io.github.resilience4j.retry.Retry
 import io.github.resilience4j.retry.RetryConfig
 import io.github.resilience4j.retry.RetryRegistry

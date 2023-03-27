@@ -1,8 +1,8 @@
 package com.patrykglow.twitterconnector
 
-import com.patrykglow.twitterconnector.adapters.twitter.api.TWITTER_DATE_PATTERN
-import com.patrykglow.twitterconnector.adapters.twitter.api.TweetResponse
-import com.patrykglow.twitterconnector.adapters.twitter.api.TwitterUser
+import com.patrykglow.twitterconnector.adapters.twitter.api.v1.TWITTER_DATE_PATTERN
+import com.patrykglow.twitterconnector.adapters.twitter.api.v1.TweetResponse
+import com.patrykglow.twitterconnector.adapters.twitter.api.v1.TwitterUser
 import com.patrykglow.twitterconnector.domain.Author
 import com.patrykglow.twitterconnector.domain.AuthorId
 import com.patrykglow.twitterconnector.domain.Tweet

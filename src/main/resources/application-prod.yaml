@@ -1,10 +1,11 @@
 twitter:
   api:
-    base-url: https://stream.twitter.com/1.1/
-    consumer-key: ${TWITTER_CONSUMER_KEY}
-    consumer-secret: ${TWITTER_CONSUMER_SECRET}
-    access-token: ${TWITTER_ACCESS_TOKEN}
-    access-token-secret: ${TWITTER_ACCESS_TOKEN_SECRET}
+    v1:
+      base-url: https://stream.twitter.com/1.1/
+      consumer-key: ${TWITTER_CONSUMER_KEY}
+      consumer-secret: ${TWITTER_CONSUMER_SECRET}
+      access-token: ${TWITTER_ACCESS_TOKEN}
+      access-token-secret: ${TWITTER_ACCESS_TOKEN_SECRET}
   tracker:
     batchSize: 50
     maxDuration: 1s

@@ -1,4 +1,4 @@
-package com.patrykglow.twitterconnector.adapters.twitter.api.oauth
+package com.patrykglow.twitterconnector.adapters.twitter.api.v1.oauth
 
 import java.security.InvalidKeyException
 import java.security.NoSuchAlgorithmException
