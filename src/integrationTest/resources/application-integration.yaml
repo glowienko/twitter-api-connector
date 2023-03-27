@@ -1,0 +1,11 @@
+twitter:
+  api:
+    base-url: http://localhost:${wiremock.server.port}
+    consumer-key: aaa
+    consumer-secret: aaa
+    access-token: aaa
+    access-token-secret: aaa
+  tracker:
+    batchSize: 5
+    maxDuration: 1s
+
