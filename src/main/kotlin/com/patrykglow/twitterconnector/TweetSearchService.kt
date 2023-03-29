@@ -8,6 +8,7 @@ import org.springframework.stereotype.Component
 
 @Component
 class TweetSearchService(private val tweetTracker: TweetTracker) {
+
     suspend fun findTweets(keywords: List<String>): Map<Author, List<Tweet>> =
         tweetTracker.trackTweetsOn(keywords)
 

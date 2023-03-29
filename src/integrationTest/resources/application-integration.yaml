@@ -9,4 +9,8 @@ twitter:
   tracker:
     batchSize: 5
     maxDuration: 1s
+spring:
+  datasource:
+    url: jdbc:tc:postgresql:12.8:///tweets
+    driver-class-name: org.testcontainers.jdbc.ContainerDatabaseDriver
 

@@ -29,4 +29,14 @@ class BatchOrTimeoutTweetTracker(
                 .also { println("Batch size reached, returning ${tweets.size} tweets") }
         } ?: tweets.groupByAuthorSortAllAscending().also { println("Timeout reached, returning ${tweets.size} tweets") }
     }
+
+    override suspend fun getTweetsBatch(keywords: List<String>): List<Tweet> {
+        return withTimeoutOrNull(defaultSettings.batchMaxDuration) {
+            tweetFinder.findTweetsBy(keywords)
+                .take(defaultSettings.batchSize)
+                .catch { println("No retry error occurred: ${it.message}") }
+                .toList()
+                .also { println("Batch size reached, returning ${defaultSettings.batchSize} tweets") }
+        } ?: emptyList()
+    }
 }

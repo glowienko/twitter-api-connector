@@ -41,6 +41,8 @@ extra["googleOauthClient"] = "1.34.1"
 extra["kotestVersion"] = "5.5.5"
 extra["resilience4jVersion"] = "2.0.2"
 extra["springCloudContractWiremockVersion"] = "4.0.1"
+extra["testcontainersVersion"] = "1.17.6"
+extra["kotlinLoggingVersion"] = "3.0.5"
 
 dependencies {
     implementation("com.fasterxml.jackson.module:jackson-module-kotlin")
@@ -49,12 +51,16 @@ dependencies {
     implementation("org.jetbrains.kotlinx:kotlinx-coroutines-reactor")
 
     implementation("org.springframework.boot:spring-boot-starter-webflux")
+    implementation("org.springframework.boot:spring-boot-starter-data-jpa")
+
 
     implementation("io.github.resilience4j:resilience4j-kotlin:${property("resilience4jVersion")}")
     implementation("io.github.resilience4j:resilience4j-retry:${property("resilience4jVersion")}")
     implementation("io.github.resilience4j:resilience4j-timelimiter:${property("resilience4jVersion")}")
 
     implementation("org.springframework.boot:spring-boot-starter-actuator")
+    implementation("io.github.microutils:kotlin-logging:${property("kotlinLoggingVersion")}")
+
 
     developmentOnly("org.springframework.boot:spring-boot-devtools")
     annotationProcessor("org.springframework.boot:spring-boot-configuration-processor")
@@ -62,6 +68,8 @@ dependencies {
     testImplementation("org.springframework.boot:spring-boot-starter-test")
     testImplementation("io.kotest:kotest-runner-junit5:${property("kotestVersion")}")
 
+    integrationTestImplementation("org.testcontainers:junit-jupiter:${property("testcontainersVersion")}")
+    integrationTestImplementation("org.testcontainers:postgresql:${property("testcontainersVersion")}")
     integrationTestImplementation("org.springframework.cloud:spring-cloud-contract-wiremock:${property("springCloudContractWiremockVersion")}")
 }
 
